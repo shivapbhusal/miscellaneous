@@ -43,7 +43,10 @@ def reverseParentheses(s):
     del myList[recent_left_bracket]
     return reverseParentheses("".join(map(str, myList)))
 
-// tests
-print(reverseParentheses("Hello(ab)xyz"))
-print(reverseParentheses("Hello(ab)(cd)xyz"))
-print(reverseParentheses("Hello(wxy)(a)"))
+'''
+Tests
+'''
+print(reverseParentheses("Hello(ab)xyz")) # Should give  Hellobaxyz 
+print(reverseParentheses("Hello(ab)(cd)xyz")) # Should give Hellobadcxyz
+print(reverseParentheses("Hello(wxy)(a)")) # Should give Helloyxwa
+print(reverseParentheses("abc((xyz)(cd))")) #Should give abczyxdc and subsequently abccdxyz
