@@ -1,7 +1,9 @@
 '''
-Python Script to reverse chars inside a bracket.
+A recursive solution to reverse strings when they are enclosed inside a pair of parentheses. 
+For example, if Input is "abc(bc)da". 
+Probable answer will be: "abccbda". 
 
-This is a recursive solution.
+Disclaimer: Please check the script for more complicated cases. 
 '''
 
 def reverse(myList, recent_left_bracket, current):
