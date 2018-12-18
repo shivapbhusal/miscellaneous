@@ -6,13 +6,13 @@ from itertools import permutations
 
 perm = permutations(list('apple'),5)
 
-words = []
+words = set()
 f = open('/usr/share/dict/words')
 for word in f:
     word = word.strip()
-    words.append(word)
+    words.add(word.lower())
 
 for item in perm:
-    if str(item) in words:
-        print(str(item))
+    if ''.join(item) in words:
+        print(str(''.join(item)))
 
